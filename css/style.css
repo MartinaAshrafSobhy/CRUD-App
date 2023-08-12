@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&family=Montserrat:wght@100;400;600&family=Pacifico&display=swap');
+
+body{
+    background-image: url(../bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header h1{
+    font-family: 'Pacifico', cursive;
+    position: relative;
+}
+header h1::before {
+    content: "";
+    position: absolute;
+    width: 20%;
+    height: 25%;
+    left: 450px;
+    bottom: 5px;
+    background-color:greenyellow;
+    transition: height 350ms;
+    z-index: -1;
+}
+header:hover  h1::before{
+    height: 80%;
+}
+.bookmark{
+    border-width: 3px 0 3px 0;
+    border-color:  darkolivegreen;
+    border-style: dotted;
+    font-family: 'Edu SA Beginner', cursive;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.bookmark-form button{
+    /* position: relative; */
+    transform: translateX(450%);
+}
